@@ -1,0 +1,38 @@
+#OSbox{
+    transition-duration: 1s;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.OS{
+    margin: auto;
+    height: 100%;
+    width: 98%;
+    overflow: hidden;
+}
+.OS img{
+    position: relative;
+    top: 30%;
+    margin: auto;
+    scale: 70%;
+    filter: grayscale(100%);
+}
+
+#os1, #os2, #os3{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    z-index: 2;
+}
+#large-header{
+    z-index: 1;
+    position: absolute;}
+canvas {
+    position: relative;
+    overflow: hidden;
+}
