@@ -76,11 +76,11 @@
         var posx = posy = 0;
         var screenWidth = window.innerHeight
         if (e.pageX || e.pageY) {
-            posx = e.clientX-screenWidth*1.1;
+            posx = e.clientX-screenWidth*1.3;
             posy = e.clientY;
         }
         else if (e.clientX || e.clientY)    {
-            posx = e.clientX-screenWidth*1.1/*e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;*/
+            posx = e.clientX-screenWidth*1.3/*e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;*/
             posy = e.clientY/*e.clientY + document.body.scrollTop + document.documentElement.scrollTop;*/
         }
         target.x = posx;
