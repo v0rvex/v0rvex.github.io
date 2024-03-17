@@ -1,0 +1,146 @@
+*{
+  transition: ease-in-out;
+  transition-duration: 200ms;
+  font-family: 'comfortaa';
+}
+
+@font-face {
+  font-family: 'comfortaa';
+  src: url('../font/static/Comfortaa-Bold.ttf');
+  font-weight: 400;
+}
+
+body, html {
+  background: #160016;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: none;
+}
+.hidden{
+  opacity: 0;
+}
+
+#startButton{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 37vw;
+  top: 10%;
+  animation-duration: 1s;
+  animation-name: shaker;
+  animation-iteration-count: infinite;
+
+  display:inline-block;
+  letter-spacing:-1px;
+  border:solid 2px #232323;
+  color:black;
+  border-radius:0.4em;
+  transition:all 0.3s linear;
+  
+}
+#startButton:hover{
+  color:#ffffff;
+  background:black;
+  animation:none;
+}
+
+@keyframes shaker {
+  0% {
+    transform:rotate(0deg);
+  }
+
+  29% {
+    transform:rotate(0deg);
+  }
+
+
+  30% {
+    transform:rotate(1deg);
+  }
+
+  31% {
+    transform:rotate(2deg);
+  }
+
+  33% {
+    transform:rotate(1deg);
+  }
+
+  35% {
+    transform:rotate(0deg);
+  }
+
+  37% {
+    transform:rotate(-1deg);
+  }
+
+  39% {
+    transform:rotate(-2deg);
+  }
+
+  41% {
+    transform:rotate(-1deg);
+  }
+
+  43% {
+    transform:rotate(0deg);
+  }
+
+
+  45% {
+    transform:rotate(1deg);
+  }
+
+  47% {
+    transform:rotate(2deg);
+  }
+
+  49% {
+    transform:rotate(1deg);
+  }
+
+  51% {
+    transform:rotate(0deg);
+  }
+
+  53% {
+    transform:rotate(-1deg);
+  }
+
+  55% {
+    transform:rotate(-2deg);
+  }
+
+  57% {
+    transform:rotate(-1deg);
+  }
+
+  59% {
+    transform:rotate(0deg);
+  }
+
+
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  top: 15%;
+  padding-top: 10px;
+  height: 80px;
+  position: absolute;
+  background: rgb(76, 0, 81);
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
